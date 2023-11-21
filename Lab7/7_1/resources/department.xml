@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Department xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="department.xsd">
+    <company ID="Com001">
+        <name>Company A</name>
+        <year_founded>2000</year_founded>
+        <employees>
+            <employee ID="Emp001">
+                <full_name>John Smith</full_name>
+                <age>30</age>
+                <salary>50000.0</salary>
+            </employee>
+            <employee ID="Emp002">
+                <full_name>Sophia Garcia</full_name>
+                <age>25</age>
+                <salary>45000.0</salary>
+            </employee>
+        </employees>
+    </company>
+    <company ID="Com002">
+        <name>Company B</name>
+        <year_founded>1995</year_founded>
+        <employees>
+            <employee ID="Emp003">
+                <full_name>Bob Miller</full_name>
+                <age>40</age>
+                <salary>60000.0</salary>
+            </employee>
+        </employees>
+    </company>
+    <company ID="Com003">
+        <name>Company C</name>
+        <year_founded>1997</year_founded>
+        <employees>
+            <employee ID="Emp004">
+                <full_name>Mia Rodriguez</full_name>
+                <age>32</age>
+                <salary>75000.0</salary>
+            </employee>
+        </employees>
+    </company>
+</Department>

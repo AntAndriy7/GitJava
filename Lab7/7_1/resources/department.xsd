@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="Department" type="DepartmentType"/>
+    <xs:complexType name="DepartmentType">
+        <xs:sequence>
+            <xs:element name="company" type="companyType" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="companyType">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="year_founded" type="xs:int"/>
+            <xs:element name="employees" type="employeesType"/>
+        </xs:sequence>
+        <xs:attribute name="ID" type="xs:ID" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="employeeType">
+        <xs:sequence>
+            <xs:element name="full_name" type="xs:string"/>
+            <xs:element name="age" type="xs:int"/>
+            <xs:element name="salary" type="xs:double"/>
+        </xs:sequence>
+        <xs:attribute name="ID" type="xs:ID" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="employeesType">
+        <xs:sequence>
+            <xs:element name="employee" type="employeeType" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>
